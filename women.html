@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Fashion - Hermond collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hermond collection</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-listing">
+            <h1>Women's Fashion</h1>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="./img/top (2).jpg" alt="Women's Dress">
+                    <h3>Elegant top</h3>
+                    <p>UGX 250,000</p>
+                    <button class="add-to-cart" data-id="5" data-name="Elegant Dress" data-price="250000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/top (1).jpg" alt="Women's Blouse">
+                    <h3>Silk Blouse</h3>
+                    <p>UGX 100,000</p>
+                    <button class="add-to-cart" data-id="6" data-name="Silk Blouse" data-price="100000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/pant (1).jpg" alt="Women's Skirt">
+                    <h3>A-Line pants</h3>
+                    <p>UGX 90,000</p>
+                    <button class="add-to-cart" data-id="7" data-name="A-Line Skirt" data-price="90000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/top (3).jpg" alt="Women's Heels">
+                    <h3>Designer shirts</h3>
+                    <p>UGX 180,000</p>
+                    <button class="add-to-cart" data-id="8" data-name="Designer Heels" data-price="180000">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Hermond collection offers the latest fashion trends for men and women.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@hermondcollection.com</p>
+                <p>Phone: +256 786571948</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hermond collection. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

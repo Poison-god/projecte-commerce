@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hermond collections</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hermond collections</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h1>About Hermond collections</h1>
+            <div class="about-content">
+                <img src="https://fwjjjxqvmfqfwgbxpxqc.supabase.co/storage/v1/object/public/images/boutique-interior.jpg" alt="Hermond collections Interior" class="about-image">
+                <div class="about-text">
+                    <p>Welcome to Hermond collections, your premier destination for sophisticated and trendy fashion in Kenya. Established in 2010, we have been dedicated to bringing the latest styles and high-quality clothing to our discerning customers.</p>
+                    <p>Our mission is to empower individuals to express their unique style through carefully curated collections of clothing and accessories. We believe that fashion is not just about looking good, but feeling confident and comfortable in what you wear.</p>
+                    <p>At Hermond collections, we pride ourselves on:</p>
+                    <ul>
+                        <li>Offering a wide range of styles for both men and women</li>
+                        <li>Ensuring the highest quality in all our products</li>
+                        <li>Providing excellent customer service</li>
+                        <li>Staying up-to-date with the latest fashion trends</li>
+                        <li>Supporting local designers and ethical fashion practices</li>
+                    </ul>
+                    <p>We invite you to explore our collections and discover the perfect pieces to enhance your wardrobe. Thank you for choosing Hermond collections as your fashion partner.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Hermond collections offers the latest fashion trends for men and women.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@hermondcollections.com</p>
+                <p>Phone: +256 786571948</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hermond collections. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

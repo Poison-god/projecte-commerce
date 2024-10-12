@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermond collections</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Harmond collections</div>
+            <ul>
+                <li><a href="#home.html">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html">signup</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <h1>Elegant Fashion for Every Occasion</h1>
+            <p>Discover our new collection</p>
+            <a href="#categories" class="cta-button">Shop Now</a>
+        </section>
+        
+        <section id="categories" class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="./img/men.jpg" alt="Men's Fashion">
+                    <h3><a href="men.html">Men</a></h3>
+                </div>
+                <div class="category-card">
+                    <img src="./img/women.jpeg" alt="Women's Fashion">
+                    <h3><a href="women.html">Women</a></h3>
+                </div>
+                <div class="category-card">
+                    <img src="./img/accessory (8).jpg" alt="Accessories">
+                    <h3><a href="accessories.html">Accessories</a></h3>
+                </div>
+                <div class="category-card">
+                    <img src="./img/shoe (3).jpg" alt="shoes fashion">
+                    <h3><a href="shoes.html">shoes</a></h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured" class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="./img/pant (2).jpg" alt="Elegant Dress">
+                    <h3>Elegant pants</h3>
+                    <p>UGX 150,000</p>
+                    <button class="add-to-cart" data-id="1" data-name="Elegant Dress" data-price="150000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/shoe (2).jpg" alt="Classic Suit">
+                    <h3>Classic Shoes</h3>
+                    <p>UGX 300,000</p>
+                    <button class="add-to-cart" data-id="2" data-name="Classic Suit" data-price="300000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/accessory (2).jpg" alt="Stylish Handbag">
+                    <h3>Stylish neckless</h3>
+                    <p>UGX 100,000</p>
+                    <button class="add-to-cart" data-id="3" data-name="Stylish Handbag" data-price="100000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/accessory (7).jpg" alt="Designer Watch">
+                    <h3>Designer Watch</h3>
+                    <p>UGX 200,000</p>
+                    <button class="add-to-cart" data-id="4" data-name="Designer Watch" data-price="200000">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with our latest collections and exclusive offers.</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Harmond collections offers the latest fashion trends for men and women.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@harmondcollection.com</p>
+                <p>Phone: +256 786571948</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Harmond collections. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script 
+    src="script.js">
+    import 'https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.5.0-insiders.88df1ef/dist/core-and-studio.js'
+// We can now access Theatre.core and Theatre.studio from here
+const { core, studio } = Theatre
+
+studio.initialize() // Start the Theatre.js UI
+</script>
+</body>
+</html>

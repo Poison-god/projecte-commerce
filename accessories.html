@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Hermond collections</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hermond collection</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-listing">
+            <h1>Accessories</h1>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="./img/accessory (7).jpg" alt="Designer Watch">
+                    <h3>Designer Watch</h3>
+                    <p>UGX 200,000</p>
+                    <button class="add-to-cart" data-id="9" data-name="Designer Watch" data-price="200000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/accessory (4).jpg" alt="Leather Handbag">
+                    <h3>neckless</h3>
+                    <p>UGX 150,000</p>
+                    <button class="add-to-cart" data-id="10" data-name="Leather Handbag" data-price="150000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/accessory (8).jpg" alt="Designer Sunglasses">
+                    <h3>Designer Sunglasses</h3>
+                    <p>UGX 80,000</p>
+                    <button class="add-to-cart" data-id="11" data-name="Designer Sunglasses" data-price="80000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/accessory (9).jpg" alt="Leather Belt">
+                    <h3>Belt rings</h3>
+                    <p>UGX 50,000</p>
+                    <button class="add-to-cart" data-id="12" data-name="Leather Belt" data-price="50000">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Hermond collection offers the latest fashion trends for men and women.</p>
+            </div>
+            <div class="footer-section">
+                
+                <h3>Contact</h3>
+                <p>Email: info@hermondcollections.com</p>
+                <p>Phone: +256 786571948</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hermond collections. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
